@@ -1,0 +1,25 @@
+LED SETUP
+
+GET SWITCH_POSITION
+
+ATTACKMODE HID
+
+LED ATTACK
+
+Q CTRL-ALT t
+
+sleep 2
+
+LED STAGE1
+
+
+Q STRING $SWITCH_POSITION
+Q STRING "chmod +x openvpn-install.sh && sudo bash openvpn-install.sh"
+Q ENTER
+
+# Quit the terminal
+LED CLEANUP
+Q STRING exit
+Q ENTER
+
+LED FINISH
